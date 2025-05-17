@@ -84,37 +84,33 @@ body {
     box-shadow: 0 6px 20px rgba(43, 16, 61, 0.2);
 }
 
-/* Стили для выделенной карточки Gumroad */
 .card.gumroad-card {
     background: linear-gradient(-45deg, #A87EEB, #7F5DE3, #5B29A0, #7F5DE3, #A87EEB);
-    background-size: 400% 400%; /* Увеличиваем размер фона для плавной анимации */
+    background-size: 400% 400%;
     animation: hypnoticGradient 10s ease infinite;
-    color: #fff; /* Белый текст для контраста */
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25); /* Более выраженная тень */
+    color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .card.gumroad-card i {
-    color: #fff; /* Белая иконка */
+    color: #fff;
 }
 
 .card.gumroad-card .text .title {
-    color: #fff; /* Белый заголовок */
+    color: #fff;
 }
 
 .card.gumroad-card .text .tagline {
-    color: #E0E0E0; /* Светло-серый tagline для читаемости */
+    color: #E0E0E0;
     opacity: 0.9;
 }
 
 .card.gumroad-card:hover {
-    /* Сохраняем градиент и анимацию при наведении */
     background: linear-gradient(-45deg, #A87EEB, #7F5DE3, #5B29A0, #7F5DE3, #A87EEB);
     background-size: 400% 400%;
-    animation: hypnoticGradient 10s ease infinite; /* Убедимся, что анимация продолжается */
-    
-    /* Эффекты от общего .card:hover */
-    transform: translateY(-3px) scale(1.01); /* Немного увеличим эффект */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Еще более глубокая тень */
+    animation: hypnoticGradient 10s ease infinite;
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -124,12 +120,12 @@ body {
     width: 1.8em;
     text-align: center;
     flex-shrink: 0;
-    color: #571891; /* Цвет по умолчанию для остальных карточек */
+    color: #571891;
     transition: color 0.2s;
 }
 
 .card:hover i {
-    color: #7A2EBF; /* Цвет по умолчанию при наведении для остальных */
+    color: #7A2EBF;
 }
 
 .card .text {
@@ -148,7 +144,6 @@ body {
     margin-top: 0.2rem;
 }
 
-/* Анимация для градиента */
 @keyframes hypnoticGradient {
     0% {
         background-position: 0% 50%;
@@ -159,4 +154,16 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+
+/* Стили для футера */
+.site-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: rgba(255, 255, 255, 0.7); /* Полупрозрачный белый для мягкости */
+    font-size: 0.9em;
+}
+
+.site-footer p {
+    margin: 0;
 }
