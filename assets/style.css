@@ -7,7 +7,7 @@ body {
 
 .hero {
     text-align: center;
-    padding: 2rem 1rem 4rem 1rem;
+    padding: 2rem 1rem 2rem 1rem; /* Уменьшен нижний padding с 4rem до 2rem */
 }
 
 .hero-logo {
@@ -31,7 +31,7 @@ body {
 }
 
 .hero p {
-    margin: 0 0 1rem;
+    margin: 0 0 1rem; /* Уменьшен нижний отступ параграфа, если нужно еще меньше отступ до кнопки */
     color: #E0E0E0;
 }
 
@@ -45,6 +45,7 @@ body {
     text-decoration: none;
     transition: background 0.3s, color 0.3s, border-color 0.3s;
     border: 1px solid rgba(255,255,255,0.3);
+    margin-bottom: 1rem; /* Добавлен отступ снизу кнопки, чтобы контролировать расстояние до следующего блока */
 }
 
 .cta:hover {
@@ -53,7 +54,7 @@ body {
 }
 
 .links {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 2rem 1rem; /* Уменьшен верхний padding с 2rem до 1rem */
     max-width: 600px;
     margin: auto;
     background-color: transparent;
@@ -83,15 +84,34 @@ body {
     box-shadow: 0 6px 20px rgba(43, 16, 61, 0.2);
 }
 
+/* Стиль для карточки Gumroad */
+.card.gumroad-card {
+    background: #F7E8D0; /* Чуть ярче чем #F4E0C2 */
+}
+
+.card.gumroad-card:hover {
+    background: #F0E0C8; /* Чуть ярче при наведении */
+}
+
+
 .card i {
-    font-size: 1.5rem;
-    margin-right: 1rem;
+    font-size: 1.5rem; /* Стандартный размер иконки */
+    margin-right: 1rem; /* Стандартный отступ справа */
+    width: 1.8em;       /* Фиксированная ширина для иконки */
+    text-align: center; /* Центрирование иконки внутри её блока */
+    flex-shrink: 0;     /* Предотвращает сжатие иконки, если текст длинный */
     color: #571891;
     transition: color 0.2s;
 }
 
 .card:hover i {
     color: #7A2EBF;
+}
+
+.card .text { /* Добавляем этот класс для обертки текста, чтобы он занимал оставшееся место */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Позволяет текстовому блоку занять все доступное пространство */
 }
 
 .card .title {
