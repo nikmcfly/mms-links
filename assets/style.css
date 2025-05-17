@@ -1,48 +1,54 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    color: #fff; /* Основной цвет текста теперь белый для контраста с фиолетовым фоном */
-    background-color: #9A85D9; /* Новый фон для всей страницы */
+    color: #fff;
+    background-color: #9A85D9;
 }
 
 .hero {
     text-align: center;
-    padding: 4rem 1rem;
-    /* Можно добавить очень легкий оверлей, если нужно отделить от фона, или оставить как есть */
-    /* background-color: rgba(0,0,0,0.05); */
+    padding: 2rem 1rem 4rem 1rem;
+}
+
+.hero-logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem auto;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
-    color: #ffffff; /* Белый цвет для заголовка */
-    /* Свечение для белого текста на фиолетовом фоне. Можно сделать его очень тонким или убрать. */
-    /* text-shadow: 0 0 8px rgba(255, 255, 255, 0.5), 0 0 15px rgba(74, 13, 102, 0.3); */
-    /* Или более простое темное свечение для объема: */
+    color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.1);
 }
 
 .hero p {
     margin: 0 0 1rem;
-    color: #E0E0E0; /* Слегка приглушенный белый для параграфа */
+    color: #E0E0E0;
 }
 
 .cta {
     display: inline-block;
     padding: 0.75rem 1.25rem;
     border-radius: 30px;
-    background: rgba(255,255,255,0.15); /* Полупрозрачный белый фон для эффекта стекла */
-    backdrop-filter: blur(8px); /* Эффект размытия */
-    color: #ffffff; /* Белый текст на кнопке */
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    color: #ffffff;
     text-decoration: none;
     transition: background 0.3s, color 0.3s, border-color 0.3s;
-    border: 1px solid rgba(255,255,255,0.3); /* Полупрозрачная белая рамка */
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
 .cta:hover {
-    background: rgba(255,255,255,0.3); /* Более заметный фон при наведении */
+    background: rgba(255,255,255,0.3);
     border-color: rgba(255,255,255,0.5);
 }
 
@@ -64,23 +70,23 @@ body {
     align-items: center;
     padding: 1rem;
     border-radius: 15px;
-    background: #FDFBFB; /* Очень светлый фон карточек хорошо контрастирует с фиолетовым */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень для карточек */
+    background: #F4E0C2;
+    box-shadow: 0 4px 15px rgba(43, 16, 61, 0.15);
     text-decoration: none;
-    color: #2B103D; /* Темно-фиолетовый текст на светлой карточке остается читаемым */
+    color: #2B103D;
     transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
     transform: translateY(-2px);
-    background: #FFFFFF;
-    box-shadow: 0 6px 20px rgba(43, 16, 61, 0.15); /* Чуть более выраженная тень при наведении */
+    background: #EAD5B7;
+    box-shadow: 0 6px 20px rgba(43, 16, 61, 0.2);
 }
 
 .card i {
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: #571891; /* Фиолетовые иконки на светлой карточке */
+    color: #571891;
     transition: color 0.2s;
 }
 
