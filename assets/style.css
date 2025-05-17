@@ -84,13 +84,39 @@ body {
     box-shadow: 0 6px 20px rgba(43, 16, 61, 0.2);
 }
 
+/* Стили для выделенной карточки Gumroad */
 .card.gumroad-card {
-    background: #F7E8D0;
+    background: linear-gradient(-45deg, #A87EEB, #7F5DE3, #5B29A0, #7F5DE3, #A87EEB);
+    background-size: 400% 400%; /* Увеличиваем размер фона для плавной анимации */
+    animation: hypnoticGradient 10s ease infinite;
+    color: #fff; /* Белый текст для контраста */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25); /* Более выраженная тень */
+}
+
+.card.gumroad-card i {
+    color: #fff; /* Белая иконка */
+}
+
+.card.gumroad-card .text .title {
+    color: #fff; /* Белый заголовок */
+}
+
+.card.gumroad-card .text .tagline {
+    color: #E0E0E0; /* Светло-серый tagline для читаемости */
+    opacity: 0.9;
 }
 
 .card.gumroad-card:hover {
-    background: #F0E0C8;
+    /* Сохраняем градиент и анимацию при наведении */
+    background: linear-gradient(-45deg, #A87EEB, #7F5DE3, #5B29A0, #7F5DE3, #A87EEB);
+    background-size: 400% 400%;
+    animation: hypnoticGradient 10s ease infinite; /* Убедимся, что анимация продолжается */
+    
+    /* Эффекты от общего .card:hover */
+    transform: translateY(-3px) scale(1.01); /* Немного увеличим эффект */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Еще более глубокая тень */
 }
+
 
 .card i {
     font-size: 1.5rem;
@@ -98,12 +124,12 @@ body {
     width: 1.8em;
     text-align: center;
     flex-shrink: 0;
-    color: #571891;
+    color: #571891; /* Цвет по умолчанию для остальных карточек */
     transition: color 0.2s;
 }
 
 .card:hover i {
-    color: #7A2EBF;
+    color: #7A2EBF; /* Цвет по умолчанию при наведении для остальных */
 }
 
 .card .text {
@@ -120,4 +146,17 @@ body {
     font-size: 0.9em;
     opacity: 0.8;
     margin-top: 0.2rem;
+}
+
+/* Анимация для градиента */
+@keyframes hypnoticGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
