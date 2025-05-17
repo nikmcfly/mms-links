@@ -14,10 +14,12 @@ body {
 }
 
 .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-family: 'Roboto', sans-serif; /* Изменен шрифт */
+    font-weight: 700; /* Используем жирное начертание Roboto */
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #FFD700;
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgba(230, 162, 39, 0.7), 0 0 30px rgba(230, 162, 39, 0.5);
 }
 
 .hero p {
@@ -31,16 +33,16 @@ body {
     border-radius: 30px;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
-    color: #FF7F50;
+    color: #E6A227;
     text-decoration: none;
     transition: background 0.3s, color 0.3s, border-color 0.3s;
-    border: 1px solid rgba(255, 127, 80, 0.3);
+    border: 1px solid rgba(230, 162, 39, 0.5);
 }
 
 .cta:hover {
     background: rgba(255,255,255,0.3);
-    color: #FF6347;
-    border-color: #FF7F50;
+    color: #FFBF40;
+    border-color: #E6A227;
 }
 
 .links {
@@ -60,28 +62,27 @@ body {
     align-items: center;
     padding: 1rem;
     border-radius: 15px;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
+    background: #F4E0C2;
     text-decoration: none;
-    color: #fff;
+    color: #2B103D;
     transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
     transform: translateY(-2px);
-    background: rgba(255,255,255,0.2);
-    box-shadow: 0 0 15px rgba(175, 105, 239, 0.25);
+    background: #EAD5B7;
+    box-shadow: 0 4px 15px rgba(43, 16, 61, 0.2);
 }
 
 .card i {
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: #AF69EF;
+    color: #571891;
     transition: color 0.2s;
 }
 
 .card:hover i {
-    color: #CF9FFF;
+    color: #7A2EBF;
 }
 
 .card .title {
