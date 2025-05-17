@@ -2,25 +2,29 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    background: #000;
+    background: #0A0112;
 }
 
 .hero {
     text-align: center;
     padding: 4rem 1rem;
-    background: linear-gradient(135deg, #16001e, #5e1179, #ff3d81, #ff9124);
+    background: linear-gradient(135deg, #0A0112 20%, #4A0D66 60%, #AF69EF 100%);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
 
 .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-family: 'Roboto', sans-serif; /* Изменен шрифт */
+    font-weight: 700; /* Используем жирное начертание Roboto */
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgba(230, 162, 39, 0.7), 0 0 30px rgba(230, 162, 39, 0.5);
 }
 
 .hero p {
     margin: 0 0 1rem;
+    color: #E0E0E0;
 }
 
 .cta {
@@ -29,13 +33,16 @@ body {
     border-radius: 30px;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
-    color: #fff;
+    color: #E6A227;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+    border: 1px solid rgba(230, 162, 39, 0.5);
 }
 
 .cta:hover {
     background: rgba(255,255,255,0.3);
+    color: #FFBF40;
+    border-color: #E6A227;
 }
 
 .links {
@@ -47,7 +54,7 @@ body {
 .group {
     display: grid;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card {
@@ -55,25 +62,37 @@ body {
     align-items: center;
     padding: 1rem;
     border-radius: 15px;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
+    background: #F4E0C2;
     text-decoration: none;
-    color: #fff;
-    transition: transform 0.2s, background 0.2s;
+    color: #2B103D;
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
     transform: translateY(-2px);
-    background: rgba(255,255,255,0.2);
+    background: #EAD5B7;
+    box-shadow: 0 4px 15px rgba(43, 16, 61, 0.2);
 }
 
 .card i {
     font-size: 1.5rem;
     margin-right: 1rem;
+    color: #571891;
+    transition: color 0.2s;
+}
+
+.card:hover i {
+    color: #7A2EBF;
 }
 
 .card .title {
     font-weight: bold;
+}
+
+.card .tagline {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-top: 0.2rem;
 }
 
 @keyframes gradient {
